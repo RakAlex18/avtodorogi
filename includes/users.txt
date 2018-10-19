@@ -1,0 +1,9 @@
+Login: Саша
+Password: ашас
+E-mail: casha@tut.by
+Login: Петя
+Password: ятеп
+E-mail: petr@tut.by
+Login: Коля
+Password: ялок
+E-mail: koliya@tut.by
