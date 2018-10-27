@@ -53,7 +53,7 @@
             <div class="col-lg-2 col-sm-3 col-6">
                 <div class="footerMenu">
                     <ul>
-                        <a href="#">
+                        <a href="/news.php">
                             <li>Новости</li>
                         </a>
                         <a href="#">

@@ -1,5 +1,6 @@
 <?php session_start(); ?>
 
+<?php require_once "db.php";?>
 
 <?php include "includes/header.php"; ?>
 <?php include "includes/nav_top.php"; ?>

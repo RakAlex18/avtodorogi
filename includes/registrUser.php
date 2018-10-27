@@ -91,14 +91,14 @@
 
             </div>
             <div class="form-group col-sm-12 col-md-5">
-                <label for="phoneNumber" class="col-sm-5 control-label sr-only">Номер телефона </label>
+                <label for="phoneNumber" class="col-sm-5 control-label sr-only">Номер телефона Viber </label>
                 <div class="col-sm-9 input-group">
                     <div class="input-group-prepend">
                         <div class="input-group-text">
                     <i class="fas fa-phone-square"></i>
                         </div>
                     </div>
-                    <input type="phoneNumber" name="phoneNumber" id="phoneNumber" placeholder="Номер телефона" class="form-control">
+                    <input type="phoneNumber" name="phoneNumber" id="phoneNumber" placeholder="Номер телефона - Viber" class="form-control">
                 </div>
             </div>
             <fieldset class="form-group">
