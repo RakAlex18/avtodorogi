@@ -72,6 +72,9 @@
 							</div>
 						</div>
 						<button type="submit" class="btn btn-primary btn-block">Войти</button>
+						<button type="submit" class="btn btn-primary btn-block">
+                            <a href="admin/index.php">Войти администратором</a>
+                        </button>
 					</form> <!-- /form -->
         </div>
     </div>

@@ -1,7 +1,7 @@
 <!-- ФОРМА РЕГИСТРАЦИИ -->
 <div class=" registrUser">
 
-    <form action="includes/registrValid.php" method="post" class="container form-horizontal" role="form">
+    <form action="includes/validation.php" method="post" class="container form-horizontal" role="form">
         <div class="form-row">
             <div class="form-group col-md-6 mt-3 mb-3">
                 <label for="firstName" class="col-sm-12 control-label sr-only">Ваше Имя</label>

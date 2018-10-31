@@ -12,7 +12,8 @@ echo"Ошибка подключения:" .mysqli_connect_error();
 
 }
 else {
-//echo"Соединение установлено";
+echo"Соединение установлено";
 }
-
+//прописываем кодировку UTF-8
+mysqli_set_charset($con, "utf8");
 ?>
