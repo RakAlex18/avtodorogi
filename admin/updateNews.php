@@ -2,8 +2,9 @@
 
 <?php require_once "../db.php"; ?>
 
+<?php include "function.php"; ?>
 <?php include "header.php"; ?>
-
+<?php //updateNews(); ?>
 
 <form action="" method="post" class="container form-horizontal" role="form">
     <?php
@@ -16,8 +17,7 @@
     }
     ?>
     <div class="row">
-        <table id="dtBasicExample" class="table table-striped table-bordered table-sm table-hover" cellspacing="0"
-               width="100%">
+        <table id="dtBasicExample" class="table table-striped table-bordered table-sm table-hover" cellspacing="0" width="100%">
             <thead>
             <tr>
                 <th class="th-sm">ID
@@ -55,10 +55,7 @@
                 <td><?= $last_news['pub_date'] ?></td>
                 <td><?= $last_news['link_content'] ?></td>
                 <td>
-                    <input name="update" type="submit" formaction="updateNews.php?id=<?= $last_news['id'] ?>" value="Редактировать"
-                           class="btn btn-success btn-block">
-                    <input type="submit" formaction="deleteNews.php?id=<?= $last_news['id'] ?>" value="Удалить"
-                           class="btn btn-warning btn-block">
+                    <input name = "update" type="submit" formaction="updateNews.php" value="Редактировать" class="btn btn-success btn-block">
                 </td>
             </tr>
             </tbody>

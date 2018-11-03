@@ -1,13 +1,17 @@
 <?php session_start(); ?>
 
 <?php require_once "../db.php"; ?>
-
+<?php include "function.php"; ?>
 <?php include "header.php"; ?>
 
 
 <form action="" method="post" class="container form-horizontal" role="form">
     <?php
-    $select_news = "SELECT id, title, content, id_author, pub_date, link_content FROM news";
+    /*если существует GET запрос с ID*/
+    if (isset($_GET['id'])) {
+    //создаем переменную для присваивания ей номера ID из GET запроса
+    $newsID = $_GET['id'];
+    $select_news = "SELECT id, title, content, id_author, pub_date, link_content FROM news WHERE id=$newsID";
     //передаем 2 параметра: подключение из db.php и $select_news
     $res_select = mysqli_query($con, $select_news);
     //проверка на наличие ошибок
@@ -55,38 +59,21 @@
                 <td><?= $last_news['pub_date'] ?></td>
                 <td><?= $last_news['link_content'] ?></td>
                 <td>
-                    <input name="update" type="submit" formaction="updateNews.php?id=<?= $last_news['id'] ?>" value="Редактировать"
-                           class="btn btn-success btn-block">
-                    <input type="submit" formaction="deleteNews.php?id=<?= $last_news['id'] ?>" value="Удалить"
+
+                    <input name="delete" type="submit" value="Удалить"
                            class="btn btn-warning btn-block">
                 </td>
             </tr>
             </tbody>
             <?php
             }
+            }
             ?>
-            <tfoot>
-            <tr>
-                <th>ID
-                </th>
-                <th>Title
-                </th>
-                <th>Content
-                </th>
-                <th>ID_author
-                </th>
-                <th>Pub_date
-                </th>
-                <th>Link_content
-                </th>
-                <th>Button
-                </th>
-            </tr>
-            </tfoot>
+
         </table>
     </div>
 </form> <!-- /form -->
 <a href="index.php">Вернуться назад</a>
-
+<?php deleteNews(); ?>
 <?php include "footer.php"; ?>
 

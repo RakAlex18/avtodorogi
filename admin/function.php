@@ -29,7 +29,31 @@ function cleaning($text)
 
 function updateNews()
 {
-    global $con;//делаем глобальной переменную соединения с БД
-
+    if (!isset($_POST['submit'])) {
+        global $con;//делаем глобальной переменную соединения с БД
+        $title = $_POST['title'];
+        $content = $_POST['content'];
+        $link_content = $_POST['link_content'];
+    }
 }
-    ?>
+
+function deleteNews()
+{
+    $id = $_GET['id'];
+   // echo $id;
+    if (!isset($_POST['delete'])) {
+        global $con;//делаем глобальной переменную соединения с БД
+        $delete_news = "DELETE FROM news WHERE id = $id";
+        //echo "Новость успешно удалена";
+        $res = mysqli_query($con, $delete_news);
+    }
+    if (!$res){
+        die('Query FAILED' . mysqli_error());
+    }
+    else {
+        echo "Новость успешно удалена";
+    }
+}
+
+
+?>
