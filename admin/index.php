@@ -5,7 +5,7 @@
 
 <!--ВЕРХНЯЯ НАВИГАЦИОННАЯ ПАНЕЛЬ-->
 <nav id='menu' class="menu navbar navbar-expand-lg">
-    <a class="navbar-brand" href="../index.php" style="color: #ef6c00">Администратор</a> <!--изменил цвет брэнда-->
+    <a class="navbar-brand" href="../index.php" style="color: #ef6c00">Главная</a> <!--изменил цвет брэнда-->
     <!--изменил цвет тогглера-->
     <button style="background-color: #ef6c00" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"

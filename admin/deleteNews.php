@@ -1,7 +1,7 @@
 <?php session_start(); ?>
-
+<!--УДАЛЕНИЕ ВЫБРАННОЙ НОВОСТИ-->
 <?php require_once "../db.php"; ?>
-<?php include "function.php"; ?>
+
 <?php include "header.php"; ?>
 
 
@@ -61,6 +61,7 @@
                 <td>
 
                     <input name="delete" type="submit" value="Удалить"
+                           formaction="delete.php?id=<?= $last_news['id'] ?>"
                            class="btn btn-warning btn-block">
                 </td>
             </tr>
@@ -73,7 +74,8 @@
         </table>
     </div>
 </form> <!-- /form -->
-<a href="index.php">Вернуться назад</a>
-<?php deleteNews(); ?>
+<a class="btn btn-success btn-block" href="update_news.php">Вернуться назад</a>
+
+
 <?php include "footer.php"; ?>
 

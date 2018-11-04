@@ -1,5 +1,5 @@
 <?php session_start(); ?>
-
+<!--СОЗДАНИЕ НОВОСТИ-->
 <?php require_once "../db.php"; ?>
 
 <?php include "function.php"; ?>
@@ -57,7 +57,9 @@
             </div>
         </div>
     </form> <!-- /form -->
-    <a href="index.php">Вернуться назад</a>
+<br>
+    <a class="btn btn-success btn-block" href="index.php">Вернуться назад</a>
+
 </div>
 <?php include "footer.php"; ?>
 

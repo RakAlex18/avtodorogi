@@ -1,13 +1,12 @@
 <?php session_start(); ?>
-
+<!--ВЫВОД ВСЕХ НОВОСТЕЙ В ТАБЛИЦУ с кнопками РЕДАКТИРОВАТЬ и УДАЛИТЬ-->
 <?php require_once "../db.php"; ?>
 
 <?php include "header.php"; ?>
 
-
 <form action="" method="post" class="container form-horizontal" role="form">
     <?php
-    $select_news = "SELECT id, title, content, id_author, pub_date, link_content FROM news";
+    $select_news = "SELECT id, title, content, id_author, pub_date, link_content FROM news WHERE id>0 ORDER BY id DESC LIMIT 15";
     //передаем 2 параметра: подключение из db.php и $select_news
     $res_select = mysqli_query($con, $select_news);
     //проверка на наличие ошибок
@@ -15,6 +14,9 @@
         echo mysqli_error($con);
     }
     ?>
+    <br>
+    <a class="btn btn-success btn-block" href="index.php">Вернуться назад</a>
+    <br>
     <div class="row">
         <table id="dtBasicExample" class="table table-striped table-bordered table-sm table-hover" cellspacing="0"
                width="100%">
@@ -86,7 +88,7 @@
         </table>
     </div>
 </form> <!-- /form -->
-<a href="index.php">Вернуться назад</a>
+<a class="btn btn-success btn-block" href="index.php">Вернуться назад</a>
 
 <?php include "footer.php"; ?>
 
