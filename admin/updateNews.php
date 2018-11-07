@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 <!--РЕДАКТИРОВАНИЕ НОВОСТИ-->
-<?php require_once "../db.php"; ?>
+<?php require_once "db.php"; ?>
 
 <?php include "header.php"; ?>
 
@@ -60,7 +60,7 @@
                     <td><input name="pub_date" type="text" value="<?= $last_news['pub_date'] ?>"></td>
                     <td><input name="link_content" type="text" value="<?= $last_news['link_content'] ?>"></td>
                     <td>
-                        <input name="update" type="submit" formaction="update.php?id=<?= $last_news['id'] ?>"
+                        <input name="update" type="submit" formaction="update_report.php?id=<?= $last_news['id'] ?>"
                                value="Изменить"
                                class="btn btn-success btn-block">
                     </td>

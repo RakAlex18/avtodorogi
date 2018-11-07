@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3d4ee5e-1b88-4ec2-ac6f-6f5632fce748" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/admin/create_author.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/admin/db.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/admin/deleteAuthors.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/admin/updateAuthors.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/admin/update_authors.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/admin/create_news.php" afterPath="$PROJECT_DIR$/admin/create_news.php" />
+      <change beforePath="$PROJECT_DIR$/admin/delete.php" afterPath="$PROJECT_DIR$/admin/delete_report.php" />
       <change beforePath="$PROJECT_DIR$/admin/deleteNews.php" afterPath="$PROJECT_DIR$/admin/deleteNews.php" />
+      <change beforePath="$PROJECT_DIR$/admin/function.php" afterPath="$PROJECT_DIR$/admin/function.php" />
+      <change beforePath="$PROJECT_DIR$/admin/header.php" afterPath="$PROJECT_DIR$/admin/header.php" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" afterPath="$PROJECT_DIR$/admin/index.php" />
+      <change beforePath="$PROJECT_DIR$/admin/update.php" afterPath="$PROJECT_DIR$/admin/update_report.php" />
+      <change beforePath="$PROJECT_DIR$/admin/updateNews.php" afterPath="$PROJECT_DIR$/admin/updateNews.php" />
+      <change beforePath="$PROJECT_DIR$/admin/update_news.php" afterPath="$PROJECT_DIR$/admin/update_news.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,27 +26,40 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.14396612">
+    <splitter split-orientation="horizontal" split-proportion="0.49400142">
       <split-first>
         <leaf>
-          <file leaf-file-name="create_news.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="create_news.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/admin/create_news.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="562">
-                  <caret line="60" column="40" lean-forward="true" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="40" />
+                <state relative-caret-position="255">
+                  <caret line="83" column="35" lean-forward="false" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
+                  <folding>
+                    <element signature="n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
+                    <element signature="n#div#1;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
+                    <element signature="n#div#2;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
+                    <marker date="1541595368023" expanded="true" signature="2785:2805" ph="SELECT * FRO... author" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="create_author.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/admin/create_author.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="697">
+                  <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="update_news.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/admin/update_news.php">
+          <file leaf-file-name="delete_report.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/admin/delete_report.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-                  <folding>
-                    <marker date="1541350763575" expanded="true" signature="273:380" ph="SELECT id, t... news" />
-                  </folding>
+                <state relative-caret-position="102">
+                  <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -40,21 +67,45 @@
           <file leaf-file-name="updateNews.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/admin/updateNews.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="579">
-                  <caret line="76" column="41" lean-forward="false" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
+                <state relative-caret-position="1190">
+                  <caret line="70" column="17" lean-forward="true" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
                   <folding>
-                    <marker date="1541350606616" expanded="true" signature="426:496" ph="SELECT id, t... news" />
-                    <marker date="1541350606616" expanded="true" signature="426:506" ph="SELECT id, t... news" />
+                    <marker date="1541587298389" expanded="true" signature="423:493" ph="SELECT id, t... news" />
+                    <marker date="1541587298389" expanded="true" signature="423:503" ph="SELECT id, t... news" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/admin/index.php">
+          <file leaf-file-name="deleteAuthors.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/admin/deleteAuthors.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
-                  <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+                <state relative-caret-position="259">
+                  <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+                  <folding>
+                    <marker date="1541611446786" expanded="true" signature="404:460" ph="SELECT id, n... news" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="updateAuthors.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/admin/updateAuthors.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="44" column="22" lean-forward="false" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+                  <folding>
+                    <marker date="1541611503220" expanded="true" signature="426:483" ph="SELECT id, n... author" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/main.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="544">
+                  <caret line="56" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -64,51 +115,56 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="delete.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/admin/delete.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
-                  <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="deleteNews.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="deleteNews.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/admin/deleteNews.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="409">
-                  <caret line="69" column="13" lean-forward="true" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+                <state relative-caret-position="323">
+                  <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
                   <folding>
-                    <marker date="1541584858346" expanded="true" signature="403:483" ph="SELECT id, t... news" />
+                    <marker date="1541587205677" expanded="true" signature="400:480" ph="SELECT id, t... news" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="update.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/admin/update.php">
+          <file leaf-file-name="function.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/admin/function.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+                <state relative-caret-position="799">
+                  <caret line="47" column="49" lean-forward="true" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+                  <folding>
+                    <marker date="1541612378597" expanded="true" signature="606:689" ph="INSERT INTO author... " />
+                    <marker date="1541612378597" expanded="true" signature="1810:1951" ph="INSERT INTO news... " />
+                    <marker date="1541612378597" expanded="true" signature="3049:3109" ph="UPDATE news... " />
+                    <marker date="1541612378597" expanded="true" signature="3049:3110" ph="UPDATE news... " />
+                    <marker date="1541612378597" expanded="true" signature="3049:3131" ph="UPDATE news... " />
+                    <marker date="1541612378597" expanded="true" signature="3049:3132" ph="UPDATE news... " />
+                    <marker date="1541612378597" expanded="true" signature="3049:3183" ph="UPDATE news... " />
+                    <marker date="1541612378597" expanded="true" signature="3952:4035" ph="UPDATE author... " />
+                    <marker date="1541612378597" expanded="true" signature="4586:4614" ph="DELETE FROM news... " />
+                    <marker date="1541612378597" expanded="true" signature="5191:5221" ph="DELETE FROM author... " />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/admin/header.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="276">
+                  <caret line="47" column="36" lean-forward="false" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="function.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/admin/function.php">
+          <file leaf-file-name="update_authors.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/admin/update_authors.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1105">
-                  <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+                <state relative-caret-position="136">
+                  <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
                   <folding>
-                    <marker date="1541349775273" expanded="true" signature="685:778" ph="INSERT INTO news... " />
-                    <marker date="1541349775273" expanded="true" signature="1650:1710" ph="UPDATE news... " />
-                    <marker date="1541349775273" expanded="true" signature="1650:1711" ph="UPDATE news... " />
-                    <marker date="1541349775273" expanded="true" signature="1650:1732" ph="UPDATE news... " />
-                    <marker date="1541349775273" expanded="true" signature="1650:1733" ph="UPDATE news... " />
-                    <marker date="1541349775273" expanded="true" signature="1650:1784" ph="UPDATE news... " />
-                    <marker date="1541349775273" expanded="true" signature="2189:2217" ph="DELETE FROM news... " />
+                    <marker date="1541607190851" expanded="true" signature="271:355" ph="SELECT id, n... author" />
                   </folding>
                 </state>
               </provider>
@@ -117,6 +173,13 @@
         </leaf>
       </split-second>
     </splitter>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>upd</find>
+      <find>update</find>
+      <find>delete</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -141,16 +204,24 @@
         <option value="$PROJECT_DIR$/db.php" />
         <option value="$PROJECT_DIR$/includes/footer.php" />
         <option value="$PROJECT_DIR$/includes/header.php" />
-        <option value="$PROJECT_DIR$/admin/header.php" />
         <option value="$PROJECT_DIR$/admin/footer.php" />
-        <option value="$PROJECT_DIR$/admin/function.php" />
+        <option value="$PROJECT_DIR$/admin/css/main.css" />
+        <option value="$PROJECT_DIR$/admin/css/main_admin.css" />
         <option value="$PROJECT_DIR$/admin/index.php" />
-        <option value="$PROJECT_DIR$/admin/create_news.php" />
-        <option value="$PROJECT_DIR$/admin/updateNews.php" />
-        <option value="$PROJECT_DIR$/admin/update.php" />
-        <option value="$PROJECT_DIR$/admin/delete.php" />
         <option value="$PROJECT_DIR$/admin/update_news.php" />
+        <option value="$PROJECT_DIR$/admin/delete.php" />
+        <option value="$PROJECT_DIR$/admin/update.php" />
         <option value="$PROJECT_DIR$/admin/deleteNews.php" />
+        <option value="$PROJECT_DIR$/admin/updateNews.php" />
+        <option value="$PROJECT_DIR$/admin/create_news.php" />
+        <option value="$PROJECT_DIR$/admin/create_author.php" />
+        <option value="$PROJECT_DIR$/admin/update_authors.php" />
+        <option value="$PROJECT_DIR$/admin/update_report.php" />
+        <option value="$PROJECT_DIR$/admin/delete_report.php" />
+        <option value="$PROJECT_DIR$/admin/header.php" />
+        <option value="$PROJECT_DIR$/admin/deleteAuthors.php" />
+        <option value="$PROJECT_DIR$/admin/updateAuthors.php" />
+        <option value="$PROJECT_DIR$/admin/function.php" />
       </list>
     </option>
   </component>
@@ -166,7 +237,9 @@
     <option name="width" value="1226" />
     <option name="height" value="867" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -197,17 +270,13 @@
             <path>
               <item name="avtodorogi" type="b2602c69:ProjectViewProjectNode" />
               <item name="avtodorogi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="avtodorogi" type="b2602c69:ProjectViewProjectNode" />
               <item name="avtodorogi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="includes" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="avtodorogi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="avtodorogi" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -275,12 +344,12 @@
       <workItem from="1539432340273" duration="16705000" />
       <workItem from="1539881626406" duration="2546000" />
       <workItem from="1540363090137" duration="808000" />
-      <workItem from="1541340517779" duration="10737000" />
+      <workItem from="1541340517779" duration="28649000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53567000" />
+    <option name="totallyTimeSpent" value="71479000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -319,76 +388,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/includes/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="67" lean-forward="false" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/big_menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2720">
-          <caret line="160" column="6" lean-forward="false" selection-start-line="160" selection-start-column="6" selection-end-line="160" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/registrValid.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <marker date="1539918640051" expanded="true" signature="1752:1835" ph="..." />
-            <marker date="1539918640051" expanded="true" signature="1818:1835" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/registration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/registrValid.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-          <folding>
-            <marker date="1539918640051" expanded="true" signature="1752:1835" ph="..." />
-            <marker date="1539918640051" expanded="true" signature="1818:1835" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/registrUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="104" lean-forward="false" selection-start-line="17" selection-start-column="104" selection-end-line="17" selection-end-column="104" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -516,21 +515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="267" column="17" lean-forward="false" selection-start-line="267" selection-start-column="17" selection-end-line="267" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/registrValid.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -542,42 +526,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/registrUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
-          <caret line="57" column="36" lean-forward="false" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/registration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -608,31 +560,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/header.php">
+    <entry file="file://$PROJECT_DIR$/admin/css/libs.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/function.php">
+    <entry file="file://$PROJECT_DIR$/admin/db.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding>
-            <marker date="1541349775273" expanded="true" signature="685:778" ph="INSERT INTO news... " />
-            <marker date="1541349775273" expanded="true" signature="1650:1710" ph="UPDATE news... " />
-            <marker date="1541349775273" expanded="true" signature="1650:1711" ph="UPDATE news... " />
-            <marker date="1541349775273" expanded="true" signature="1650:1732" ph="UPDATE news... " />
-            <marker date="1541349775273" expanded="true" signature="1650:1733" ph="UPDATE news... " />
-            <marker date="1541349775273" expanded="true" signature="1650:1784" ph="UPDATE news... " />
-            <marker date="1541349775273" expanded="true" signature="2189:2217" ph="DELETE FROM news... " />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="56" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="75" column="45" lean-forward="false" selection-start-line="75" selection-start-column="45" selection-end-line="75" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/css/main_admin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/updateNews.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="70" column="17" lean-forward="true" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+          <folding>
+            <marker date="1541587298389" expanded="true" signature="423:493" ph="SELECT id, t... news" />
+            <marker date="1541587298389" expanded="true" signature="423:503" ph="SELECT id, t... news" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/registrUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-574">
+          <caret line="57" column="36" lean-forward="false" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registration.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
@@ -640,57 +643,135 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/create_news.php">
+    <entry file="file://$PROJECT_DIR$/news.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="60" column="40" lean-forward="true" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/updateNews.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="76" column="41" lean-forward="false" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1541350606616" expanded="true" signature="426:496" ph="SELECT id, t... news" />
-            <marker date="1541350606616" expanded="true" signature="426:506" ph="SELECT id, t... news" />
+            <marker date="1540648626774" expanded="true" signature="523:603" ph="SELECT id, t... news" />
+            <marker date="1540648626774" expanded="true" signature="1869:2029" ph="SELECT id, t... news" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/update.php">
+    <entry file="file://$PROJECT_DIR$/admin/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/delete.php">
+    <entry file="file://$PROJECT_DIR$/admin/update_report.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/update_authors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+          <folding>
+            <marker date="1541607190851" expanded="true" signature="271:355" ph="SELECT id, n... author" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/update_news.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        <state relative-caret-position="1078">
+          <caret line="69" column="19" lean-forward="true" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
           <folding>
-            <marker date="1541350763575" expanded="true" signature="273:380" ph="SELECT id, t... news" />
+            <marker date="1541586834063" expanded="true" signature="270:377" ph="SELECT id, t... news" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/create_author.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/deleteNews.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="69" column="13" lean-forward="true" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+        <state relative-caret-position="323">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
-            <marker date="1541584858346" expanded="true" signature="403:483" ph="SELECT id, t... news" />
+            <marker date="1541587205677" expanded="true" signature="400:480" ph="SELECT id, t... news" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/delete_report.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="47" column="36" lean-forward="false" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/deleteAuthors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <marker date="1541611446786" expanded="true" signature="404:460" ph="SELECT id, n... news" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/updateAuthors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="44" column="22" lean-forward="false" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+          <folding>
+            <marker date="1541611503220" expanded="true" signature="426:483" ph="SELECT id, n... author" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/create_news.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="83" column="35" lean-forward="false" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <marker date="1541595368023" expanded="true" signature="2785:2805" ph="SELECT * FRO... author" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="49" lean-forward="true" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+          <folding>
+            <marker date="1541612378597" expanded="true" signature="606:689" ph="INSERT INTO author... " />
+            <marker date="1541612378597" expanded="true" signature="1810:1951" ph="INSERT INTO news... " />
+            <marker date="1541612378597" expanded="true" signature="3049:3109" ph="UPDATE news... " />
+            <marker date="1541612378597" expanded="true" signature="3049:3110" ph="UPDATE news... " />
+            <marker date="1541612378597" expanded="true" signature="3049:3131" ph="UPDATE news... " />
+            <marker date="1541612378597" expanded="true" signature="3049:3132" ph="UPDATE news... " />
+            <marker date="1541612378597" expanded="true" signature="3049:3183" ph="UPDATE news... " />
+            <marker date="1541612378597" expanded="true" signature="3952:4035" ph="UPDATE author... " />
+            <marker date="1541612378597" expanded="true" signature="4586:4614" ph="DELETE FROM news... " />
+            <marker date="1541612378597" expanded="true" signature="5191:5221" ph="DELETE FROM author... " />
           </folding>
         </state>
       </provider>

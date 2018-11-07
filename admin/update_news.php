@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 <!--ВЫВОД ВСЕХ НОВОСТЕЙ В ТАБЛИЦУ с кнопками РЕДАКТИРОВАТЬ и УДАЛИТЬ-->
-<?php require_once "../db.php"; ?>
+<?php require_once "db.php"; ?>
 
 <?php include "header.php"; ?>
 

@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 <!--УДАЛЕНИЕ ВЫБРАННОЙ НОВОСТИ-->
-<?php require_once "../db.php"; ?>
+<?php require_once "db.php"; ?>
 
 <?php include "header.php"; ?>
 
@@ -61,7 +61,7 @@
                 <td>
 
                     <input name="delete" type="submit" value="Удалить" onclick="return confirm('Действительно удалить эту новость?');"
-                           formaction="delete.php?id=<?= $last_news['id'] ?>"
+                           formaction="delete_report.php?id=<?= $last_news['id'] ?>"
                            class="btn btn-warning btn-block">
                 </td>
             </tr>
