@@ -60,7 +60,7 @@
                 <td><?= $last_news['link_content'] ?></td>
                 <td>
 
-                    <input name="delete" type="submit" value="Удалить"
+                    <input name="delete" type="submit" value="Удалить" onclick="return confirm('Действительно удалить эту новость?');"
                            formaction="delete.php?id=<?= $last_news['id'] ?>"
                            class="btn btn-warning btn-block">
                 </td>

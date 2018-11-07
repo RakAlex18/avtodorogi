@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3d4ee5e-1b88-4ec2-ac6f-6f5632fce748" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/update.php" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/admin/create_news.php" afterPath="$PROJECT_DIR$/admin/create_news.php" />
       <change beforePath="$PROJECT_DIR$/admin/deleteNews.php" afterPath="$PROJECT_DIR$/admin/deleteNews.php" />
-      <change beforePath="$PROJECT_DIR$/admin/function.php" afterPath="$PROJECT_DIR$/admin/function.php" />
-      <change beforePath="$PROJECT_DIR$/admin/index.php" afterPath="$PROJECT_DIR$/admin/index.php" />
-      <change beforePath="$PROJECT_DIR$/admin/updateNews.php" afterPath="$PROJECT_DIR$/admin/updateNews.php" />
-      <change beforePath="$PROJECT_DIR$/admin/update_news.php" afterPath="$PROJECT_DIR$/admin/update_news.php" />
-      <change beforePath="$PROJECT_DIR$/db.php" afterPath="$PROJECT_DIR$/db.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,7 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6796048">
+    <splitter split-orientation="horizontal" split-proportion="0.14396612">
       <split-first>
         <leaf>
           <file leaf-file-name="create_news.php" pinned="false" current-in-tab="false">
@@ -36,8 +28,8 @@
           <file leaf-file-name="update_news.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/admin/update_news.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="459">
-                  <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+                <state relative-caret-position="255">
+                  <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
                   <folding>
                     <marker date="1541350763575" expanded="true" signature="273:380" ph="SELECT id, t... news" />
                   </folding>
@@ -72,7 +64,7 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="delete.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="delete.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/admin/delete.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="136">
@@ -82,13 +74,13 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="deleteNews.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="deleteNews.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/admin/deleteNews.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="514">
-                  <caret line="76" column="37" lean-forward="false" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
+                <state relative-caret-position="409">
+                  <caret line="69" column="13" lean-forward="true" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
                   <folding>
-                    <marker date="1541350640863" expanded="true" signature="403:483" ph="SELECT id, t... news" />
+                    <marker date="1541584858346" expanded="true" signature="403:483" ph="SELECT id, t... news" />
                   </folding>
                 </state>
               </provider>
@@ -156,9 +148,9 @@
         <option value="$PROJECT_DIR$/admin/create_news.php" />
         <option value="$PROJECT_DIR$/admin/updateNews.php" />
         <option value="$PROJECT_DIR$/admin/update.php" />
-        <option value="$PROJECT_DIR$/admin/deleteNews.php" />
         <option value="$PROJECT_DIR$/admin/delete.php" />
         <option value="$PROJECT_DIR$/admin/update_news.php" />
+        <option value="$PROJECT_DIR$/admin/deleteNews.php" />
       </list>
     </option>
   </component>
@@ -283,12 +275,12 @@
       <workItem from="1539432340273" duration="16705000" />
       <workItem from="1539881626406" duration="2546000" />
       <workItem from="1540363090137" duration="808000" />
-      <workItem from="1541340517779" duration="9913000" />
+      <workItem from="1541340517779" duration="10737000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52743000" />
+    <option name="totallyTimeSpent" value="53567000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -675,16 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/deleteNews.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="76" column="37" lean-forward="false" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
-          <folding>
-            <marker date="1541350640863" expanded="true" signature="403:483" ph="SELECT id, t... news" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/delete.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -695,10 +677,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/update_news.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+        <state relative-caret-position="255">
+          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
           <folding>
             <marker date="1541350763575" expanded="true" signature="273:380" ph="SELECT id, t... news" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/deleteNews.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="69" column="13" lean-forward="true" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+          <folding>
+            <marker date="1541584858346" expanded="true" signature="403:483" ph="SELECT id, t... news" />
           </folding>
         </state>
       </provider>
