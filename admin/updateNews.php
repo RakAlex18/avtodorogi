@@ -10,7 +10,7 @@
         if (isset($_GET['id'])) {
         //создаем переменную для присваивания ей номера ID из GET запроса
         $newsID = $_GET['id'];
-        $select_news = "SELECT id, title, content, id_author, pub_date, link_content FROM news WHERE id=$newsID";
+        $select_news = "SELECT id, title, content, id_author, pub_date, link_content, img_news FROM news WHERE id=$newsID";
         //передаем 2 параметра: подключение из db.php и $select_news
         $res_select = mysqli_query($con, $select_news);
         //проверка на наличие ошибок
@@ -29,9 +29,7 @@
                     <th class="th-sm">Title
                         <i class="fa fa-sort float-right" aria-hidden="true"></i>
                     </th>
-                    <th class="th-sm">Content
-                        <i class="fa fa-sort float-right" aria-hidden="true"></i>
-                    </th>
+
                     <th class="th-sm">ID_author
                         <i class="fa fa-sort float-right" aria-hidden="true"></i>
                     </th>
@@ -54,7 +52,9 @@
                     <td><?= $last_news['id'] ?></td>
                     <td>
                         <input name="title" type="text" value="<?= $last_news['title'] ?>"></td>
-                    <td><textarea name="content_update"><?= $last_news['content'] ?></textarea>
+                    <td><img src="img/news/<?= $last_news['img_news']  ?>" alt="" width="100">
+                        <label for="img_news"> </label>
+                        <input type="file" name="img_news" class="form-control">
                     </td>
                     <td><input name = "id_author" type="text" value="<?= $last_news['id_author'] ?>"></td>
                     <td><input name="pub_date" type="text" value="<?= $last_news['pub_date'] ?>"></td>
@@ -66,14 +66,23 @@
                     </td>
                 </tr>
                 </tbody>
-                <?php
-                }
-                }
-                ?>
+
 
             </table>
+
+
         </div>
+
+        <textarea name="content_update" cols="100" rows="20"><?= $last_news['content'] ?></textarea>
+                    <img src="img/news/<?= $last_news['img_news']  ?>" alt="">
+                        <label for="img_news"> </label>
+                        <input type="file" name="img_news" class="form-control">
+                    <?php
+                }
+
+        }
+        ?>
     </form> <!-- /form -->
-    <a class="btn btn-success btn-block" href="update_news.php">Вернуться назад</a>
+    <a class="btn btn-success btn-block" href="update_news.php?page=1">Вернуться назад</a>
 
 <?php include "footer.php"; ?>

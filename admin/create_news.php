@@ -6,7 +6,7 @@
 <?php include "header.php"; ?>
 <?php createNews(); ?>
 <div class=" registrUser">
-    <form action="create_news.php" method="post" class="container form-horizontal" role="form">
+    <form action="create_news.php" method="post" class="container-fluid form-horizontal" role="form">
         <div class="form-row">
             <div class="form-group col-md-6 mt-3 mb-3">
                 <label for="title" class="control-label sr-only">title</label>

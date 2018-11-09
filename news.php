@@ -12,7 +12,7 @@
             //создаем переменную для присваивания ей номера ID из GET запроса
             $newsID = $_GET['id'];
             //через * вытаскиваем все данные из моей таблицы news с нужным ID
-            $sql = "SELECT id, title, content, id_author, pub_date, link_content FROM news WHERE id=$newsID";
+            $sql = "SELECT id, title, content, id_author, pub_date, link_content, img_news FROM news WHERE id=$newsID";
             //передаем 2 параметра: подключение из db.php и $sql
             $result = mysqli_query($con, $sql);
             //проверка на наличие ошибок
@@ -23,6 +23,7 @@
                 ?>
                 <div class="col-md-12">
                     <div class="card-body text-center">
+                        <img src="admin/img/news/<?= $page['img_news'] ?>" class="float-left mr-3 about-img" >
                         <h3 class="card-title"> <?= $page['title'] ?> </h3>
                         <p class="card-text"><?= $page['content'] ?></p>
                         <div class="card-link">Источник:

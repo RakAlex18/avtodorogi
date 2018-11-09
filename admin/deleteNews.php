@@ -74,7 +74,7 @@
         </table>
     </div>
 </form> <!-- /form -->
-<a class="btn btn-success btn-block" href="update_news.php">Вернуться назад</a>
+<a class="btn btn-success btn-block" href="update_news.php?page=1">Вернуться назад</a>
 
 
 <?php include "footer.php"; ?>

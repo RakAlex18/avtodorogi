@@ -49,7 +49,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="create_news.php">Создать новость</a>
-                    <a class="dropdown-item" href="update_news.php">Редактировать новости</a>
+                    <a class="dropdown-item" href="update_news.php?page=1">Редактировать новости</a>
                     <a class="dropdown-item" href="create_author.php">Добавить автора</a>
                     <a class="dropdown-item" href="update_authors.php">Все авторы</a>
 

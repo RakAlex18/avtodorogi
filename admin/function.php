@@ -78,7 +78,7 @@ function updateNews()
             die('Query FAILED' . mysqli_error());
         } else {
             echo "Новость успешно изменена"; ?>
-            <a class="btn btn-success btn-block" href="update_news.php">Вернуться назад</a>
+            <a class="btn btn-success btn-block" href="update_news.php?page=1">Вернуться назад</a>
             <?php
         }
         ?>
@@ -122,7 +122,7 @@ function deleteNews()
             echo "Чтото не то";
         } else {
             echo "Новость успешно удалена"; ?>
-            <a class="btn btn-success btn-block" href="update_news.php">Вернуться назад</a>
+            <a class="btn btn-success btn-block" href="update_news.php?page=1">Вернуться назад</a>
             <?php
         }
     }
