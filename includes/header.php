@@ -48,7 +48,7 @@
 <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
-                    <form action="#" method="post" class="form-horizontal mt-3" role="form">
+                    <form action="../login.php" method="post" class="form-horizontal mt-3" role="form">
 						<div class="form-group">
 							<label for="login" class= "col-auto control-label sr-only">Ваш логин</label>
 							<div class="col-auto input-group">
@@ -72,8 +72,8 @@
 							</div>
 						</div>
 						<button type="submit" class="btn btn-primary btn-block">Войти</button>
-						<button type="submit" class="btn btn-primary btn-block">
-                            <a href="admin/index.php">Войти администратором</a>
+						<button type="submit" class="btn btn-primary btn-block" name = "admin">
+                           Войти администратором
                         </button>
 					</form> <!-- /form -->
         </div>

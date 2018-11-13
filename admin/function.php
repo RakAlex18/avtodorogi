@@ -18,8 +18,7 @@ function createAuthor()
         $res_insert = mysqli_query($con, $insert_author);
         if (!$res_insert) {
             die('Query FAILED' . mysqli_error());
-        }
-        else {?>
+        } else { ?>
             <script>alert("Автор успешно записан в БД");</script>
             <?php
         }
@@ -43,11 +42,10 @@ function createNews()
         cleaning("$link_content");
         cleaning("$id_author");
         $insert_news = "INSERT INTO news(title, content, link_content, id_author, pub_date) VALUES ('$title', '$content', '$link_content', '$id_author', '$pub_date')";
-       $res_insert =  mysqli_query($con, $insert_news);
+        $res_insert = mysqli_query($con, $insert_news);
         if (!$res_insert) {
             die('Query FAILED' . mysqli_error());
-        }
-        else {?>
+        } else { ?>
             <script>alert("Новость успешно записана в БД");</script>
             <?php
         }
@@ -118,7 +116,7 @@ function deleteNews()
         $res = mysqli_query($con, $delete_news);
 
         if (!$res) {
-           die('Query FAILED' . mysqli_error());
+            die('Query FAILED' . mysqli_error());
             echo "Чтото не то";
         } else {
             echo "Новость успешно удалена"; ?>
@@ -141,10 +139,36 @@ function deleteAuthor()
 
         if (!$res) {
             die('Query FAILED' . mysqli_error());
-            echo "Чтото не то";
+            echo "Что-то не то";
         } else {
             echo "Автор успешно удален"; ?>
             <a class="btn btn-success btn-block" href="update_authors.php">Вернуться назад</a>
+            <?php
+        }
+    }
+}
+
+
+//функция СОЗДАТЬ ПОЛЬЗОВАТЕЛЯ
+function createUsers()
+{
+//проверяем, если переменная определена (т.е. кнопка нажата)
+    if (isset($_POST['registrUser'])) {
+        global $con;//делаем глобальной переменную соединения с БД
+        $firstName = $_POST['firstName']; /*записываем в переменную данные из инпута*/
+        $lastName = $_POST['lastName'];
+        $login = $_POST['login'];
+        $email = $_POST['email'];
+        $birthDate = $_POST['birthDate'];
+        $password = $_POST['password'];
+        $phoneNumber = $_POST['phoneNumber'];
+        $user_role = $_POST['user_role'];
+        $insert_users = "INSERT INTO users(firstName, lastName, login, email, birthDate, password, phoneNumber, user_role) VALUES ('$firstName', '$lastName', '$login', '$email', '$birthDate', '$password', '$phoneNumber', '$user_role')";
+        $res_insert_users = mysqli_query($con, $insert_users);
+        if (!$res_insert_users) {
+            die('Query FAILED' . mysqli_error());
+        } else { ?>
+            <script>alert("Пользователь успешно записан в БД");</script>
             <?php
         }
     }

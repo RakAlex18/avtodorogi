@@ -14,6 +14,19 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+<script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>
+
+<script>
+    tinymce.init({
+        selector: 'textarea',
+    plugins: [
+        "a11ychecker advcode advlist anchor autolink codesample colorpicker contextmenu fullscreen help image imagetools",
+        " lists link linkchecker media mediaembed noneditable powerpaste preview",
+        " searchreplace table template textcolor tinymcespellchecker visualblocks wordcount"
+    ]
+    });
+
+</script>
 
 </body>
 

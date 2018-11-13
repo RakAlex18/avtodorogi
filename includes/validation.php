@@ -1,3 +1,6 @@
+<?php session_start(); ?>
+<?php ob_start();?> <!--стартует буфер-->
+<?php require_once "../db.php"; ?>
 <?php
 $firstName = htmlspecialchars(strip_tags(trim($_POST["firstName"])));
 $lastName = htmlspecialchars(strip_tags(trim($_POST["lastName"])));
@@ -43,7 +46,28 @@ if (strlen($login) < 3 or strlen($login) > 30) {
     exit;
 }
 
+//ДОБАВЛЯЕМ В БД
+if (isset($_POST['registr'])) {
+    global $con;//делаем глобальной переменную соединения с БД
+    $firstName = $_POST['firstName']; /*записываем в переменную данные из инпута*/
+    $lastName = $_POST['lastName']; /*записываем в переменную данные из lastName*/
+    $login = $_POST['login']; //записываем в переменную данные из инпута login
+    $email = $_POST['email']; //записываем в переменную данные из инпута
+    $password = $_POST['password']; //записываем в переменную данные из инпута
+    $insert_users = "INSERT INTO users(firstName, lastName, login, email, password) VALUES ('$firstName', '$lastName', '$login', '$email', '$password')";
+    $res_insert = mysqli_query($con, $insert_users);
+    if (!$res_insert) {
+        die('Query FAILED' . mysqli_error());
+    } else { ?>
+        <script>alert("Пользователь успешно записан в БД");</script>
+        <?php
+       //header("Location:../index.php", TRUE);
+
+    }
+}
+
 ?>
+
 
 
 

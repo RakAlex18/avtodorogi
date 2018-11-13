@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+<?php require_once "db.php"; ?>
 <!-- ФОРМА РЕГИСТРАЦИИ -->
 <div class=" registrUser">
 
@@ -129,14 +131,11 @@
           </div> <!-- /.form-group -->
 <div class = "row justify-content-center">
             <div class = "col-auto">
-                <button type="submit" class="btn btn-primary btn-block mb-3">Зарегистрироваться</button>
+                <button type="submit" name = "registr" class="btn btn-primary btn-block mb-3">Зарегистрироваться</button>
              
 			 </div>
 			 </div>
 
-
-
     </form> <!-- /form -->
-
 </div>
 

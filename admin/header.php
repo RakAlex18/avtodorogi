@@ -23,8 +23,23 @@
             <div class="col-lg-3 col-sm-5 col-auto">
                 <img src="img/Logo_1.png" alt="logo" class="logo">
             </div>
-            <div class="col-lg-9 col-sm-7 description text-center">
+            <div class="col-lg-7 col-sm-4 description text-center">
                 ПАНЕЛЬ АДМИНИСТРАТОРА
+
+
+            </div>
+            <div class="col-lg-2 col-sm-3 col-auto">
+                <small>
+                    Hello,
+                    <?php
+                    if (isset($_SESSION['login'])) {
+                        echo $_SESSION['login'];
+                    }
+                    ?>
+                </small>
+                <form action="../logout.php" method="post">
+                    <input type="submit" name = "logout" value="Выйти">
+                </form>
             </div>
         </div>
     </div>
@@ -58,6 +73,16 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle dropdown-toggle-split" href="#" id="navbarDropdown" role="button"
                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Пользователи
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="create_users.php">Создать</a>
+                    <a class="dropdown-item" href="update_users.php">Редактировать</a>
+
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle dropdown-toggle-split" href="#" id="navbarDropdown" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Технологии
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -76,8 +101,7 @@
 
                 </div>
             </li>
-
         </ul>
-
     </div>
 </nav>
+
