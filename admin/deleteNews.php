@@ -1,4 +1,6 @@
 <?php session_start(); ?>
+<?php if(!empty($_SESSION['auth'])) {
+?>
 <!--УДАЛЕНИЕ ВЫБРАННОЙ НОВОСТИ-->
 <?php require_once "db.php"; ?>
 
@@ -78,4 +80,8 @@
 
 
 <?php include "footer.php"; ?>
-
+    <?php
+}
+else {
+    header("Location:/index.php", TRUE);
+} ?>

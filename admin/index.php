@@ -1,6 +1,10 @@
 <?php session_start(); ?>
 
-
-<?php include "header.php"; ?>
-
-<?php include "footer.php"; ?>
+<?php
+if (!empty($_SESSION['auth'])) {
+    include "header.php";
+    include "footer.php";
+} else {
+    echo "У вас нет прав администратора";
+}
+?>

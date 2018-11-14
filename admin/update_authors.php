@@ -1,4 +1,6 @@
 <?php session_start(); ?>
+<?php if(!empty($_SESSION['auth'])) {
+    ?>
 <!--ВЫВОД ВСЕХ АВТОРОВ В ТАБЛИЦУ с кнопками РЕДАКТИРОВАТЬ и УДАЛИТЬ-->
 <?php require_once "db.php"; ?>
 
@@ -75,4 +77,8 @@
 <a class="btn btn-success btn-block" href="index.php">Вернуться назад</a>
 
 <?php include "footer.php"; ?>
-
+<?php
+}
+else {
+    header("Location:/index.php", TRUE);
+} ?>

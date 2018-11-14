@@ -1,4 +1,6 @@
 <?php session_start(); ?>
+<?php if(!empty($_SESSION['auth'])) {
+    ?>
 <!--РЕДАКТИРОВАНИЕ АВТОРА-->
 <?php require_once "db.php"; ?>
 
@@ -65,3 +67,8 @@
     <a class="btn btn-success btn-block" href="update_authors.php">Вернуться назад</a>
 
 <?php include "footer.php"; ?>
+    <?php
+}
+else {
+    header("Location:/index.php", TRUE);
+} ?>

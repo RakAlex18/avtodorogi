@@ -1,4 +1,6 @@
 <?php session_start(); ?>
+<?php if(!empty($_SESSION['auth'])) {
+    ?>
 <!--РЕДАКТИРОВАНИЕ НОВОСТИ-->
 <?php require_once "db.php"; ?>
 
@@ -86,3 +88,8 @@
     <a class="btn btn-success btn-block" href="update_news.php?page=1">Вернуться назад</a>
 
 <?php include "footer.php"; ?>
+<?php
+}
+else {
+    header("Location:/index.php", TRUE);
+} ?>

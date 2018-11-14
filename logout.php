@@ -1,9 +1,9 @@
 <?php session_start();
 
 ob_start(); //стартует буфер
-$_SESSION['login'] = null;
+$_SESSION['message'] = null;
 session_destroy();
-header("Location:../index.php", TRUE);
+header("Location:/index.php", TRUE);
 ?>
 
 

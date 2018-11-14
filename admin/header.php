@@ -1,6 +1,5 @@
 <?php session_start(); ?>
 
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -32,13 +31,15 @@
                 <small>
                     Hello,
                     <?php
-                    if (isset($_SESSION['login'])) {
-                        echo $_SESSION['login'];
+                    if (isset($_SESSION['message'])) {
+                        echo $_SESSION['message']['login'];
+                        echo "<br>";
+                        echo $_SESSION['message']['text'];
                     }
                     ?>
                 </small>
                 <form action="../logout.php" method="post">
-                    <input type="submit" name = "logout" value="Выйти">
+                    <input type="submit" name="logout" value="Выйти">
                 </form>
             </div>
         </div>
@@ -54,7 +55,6 @@
             aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"</span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown">
@@ -67,9 +67,7 @@
                     <a class="dropdown-item" href="update_news.php?page=1">Редактировать новости</a>
                     <a class="dropdown-item" href="create_author.php">Добавить автора</a>
                     <a class="dropdown-item" href="update_authors.php">Все авторы</a>
-
             </li>
-
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle dropdown-toggle-split" href="#" id="navbarDropdown" role="button"
                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -78,7 +76,6 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="create_users.php">Создать</a>
                     <a class="dropdown-item" href="update_users.php">Редактировать</a>
-
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle dropdown-toggle-split" href="#" id="navbarDropdown" role="button"
@@ -88,7 +85,6 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Создать</a>
                     <a class="dropdown-item" href="#">Редактировать</a>
-
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle dropdown-toggle-split" href="#" id="navbarDropdown" role="button"
@@ -98,7 +94,6 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Создать</a>
                     <a class="dropdown-item" href="#">Редактировать</a>
-
                 </div>
             </li>
         </ul>

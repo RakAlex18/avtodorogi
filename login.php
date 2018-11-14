@@ -1,11 +1,12 @@
 <?php session_start();
-
 ob_start(); //стартует буфер
 
 require_once "db.php"; ?>
 
 <?php
 if (isset($_POST['admin'])) {
+
+
     //значения от пользователя
     $login = $_POST['login'];
     if (empty($login)) {
@@ -28,13 +29,21 @@ if (isset($_POST['admin'])) {
         //значения из базы данных
         $db_login = $item['login'];
         $db_password = $item['password'];
-        echo $db_login;
-        echo $db_password;
+        //echo $db_login;
+       // echo $db_password;
     }
-    if ($login != $db_login && $password != $db_password) {
-        header("Location:/index.php", TRUE);
+    if ($login != $db_login or $password != $db_password) {
+       header("Location:/index.php", TRUE);
     } elseif ($login == $db_login && $password == $db_password) {
-        $_SESSION['login'] = $db_login;
+
+        /*        $_SESSION['login'] = $db_login;*/
+        $_SESSION['auth'] = TRUE;
+        /*$_SESSION['delete'] = true;*/
+         $_SESSION['message'] = [
+            'login' => $db_login,
+            'text' => 'Вы успешно авторизовались',
+            'status' => 'success'
+        ];
         header("Location:/admin", TRUE);
     }
     ob_end_flush();//прекращает буфер
