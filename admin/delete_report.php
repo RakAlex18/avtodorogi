@@ -6,6 +6,7 @@
 
 <?php deleteNews(); ?>
 <?php deleteAuthor(); ?>
+<?php deleteUser(); ?>
 
 
 <?php include "footer.php"; ?>

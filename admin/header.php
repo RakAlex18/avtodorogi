@@ -75,7 +75,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="create_users.php">Создать</a>
-                    <a class="dropdown-item" href="update_users.php">Редактировать</a>
+                    <a class="dropdown-item" href="update_users.php?page=1">Редактировать</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle dropdown-toggle-split" href="#" id="navbarDropdown" role="button"

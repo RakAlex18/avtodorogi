@@ -105,6 +105,36 @@ function updateAuthors()
     }
 }
 
+//функция РЕДАКТИРОВАНИЕ ПОЛЬЗОВАТЕЛЯ
+function updateUsers()
+{
+    global $con;//делаем глобальной переменную соединения с БД
+    $id = $_GET['id']; //получаем id из URL
+    if (isset($_POST['updateUser'])) {
+        $firstName = $_POST['firstName']; /*записываем в переменную данные из инпута*/
+        $lastName = $_POST['lastName']; /*записываем в переменную данные*/
+        $login = $_POST['login']; /*записываем в переменную данные из инпута*/
+        $email = $_POST['email']; /*записываем в переменную данные из инпута*/
+        $birthDate = $_POST['birthDate']; //записываем в переменную данные из инпута
+        $password = $_POST['password']; //записываем в переменную данные из инпута
+        $phoneNumber = $_POST['phoneNumber']; //записываем в переменную данные из инпута
+        $registr_date = $_POST['registr_date']; //записываем в переменную данные из инпута
+        $user_role = $_POST['user_role']; //записываем в переменную данные из инпута
+        $update = "UPDATE users SET firstName='$firstName',lastName='$lastName',login='$login',email='$email',birthDate='$birthDate', password='$password', phoneNumber='$phoneNumber', registr_date='$registr_date', user_role='$user_role' WHERE id = $id";
+        $res_update = mysqli_query($con, $update);
+        if (!$res_update) {
+            die('Query FAILED' . mysqli_error());
+        } else {
+            echo "Пользователь успешно изменен"; ?>
+            <a class="btn btn-success btn-block" href="update_users.php?page=1">Вернуться назад</a>
+            <?php
+        }
+        ?>
+
+        <?php
+    }
+}
+
 //функция УДАЛЕНИЕ НОВОСТИ
 function deleteNews()
 {
@@ -148,7 +178,26 @@ function deleteAuthor()
     }
 }
 
+//функция УДАЛЕНИЕ ПОЛЬЗОВАТЕЛЯ - ДОДЕЛАТЬ!!!!
+function deleteUser()
+{
+    $id = $_GET['id'];
+    //echo $id;
+    if (isset($_POST['deleteUser'])) {
+        global $con;//делаем глобальной переменную соединения с БД
+        $delete_user = "DELETE FROM users WHERE id = $id";
+        $res = mysqli_query($con, $delete_user);
 
+        if (!$res) {
+            die('Query FAILED' . mysqli_error());
+            echo "Что-то не то";
+        } else {
+            echo "Пользователь успешно удален"; ?>
+            <a class="btn btn-success btn-block" href="update_users.php?page=1">Вернуться назад</a>
+            <?php
+        }
+    }
+}
 //функция СОЗДАТЬ ПОЛЬЗОВАТЕЛЯ
 function createUsers()
 {

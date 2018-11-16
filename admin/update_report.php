@@ -5,6 +5,7 @@
 <?php include "header.php"; ?>
 <?php updateNews(); ?>
 <?php updateAuthors(); ?>
+<?php updateUsers(); ?>
 
 
 
