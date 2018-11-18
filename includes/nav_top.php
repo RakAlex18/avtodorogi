@@ -69,9 +69,9 @@
                 </div>
             </li>
         </ul>
-        <form class="search form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Поиск..." aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Найти</button>
+        <form action="../search.php" method="post" class="search form-inline my-2 my-lg-0">
+            <input name = "search" class="form-control mr-sm-2" type="search" placeholder="Поиск..." aria-label="Search">
+            <button name = "submit" class="btn btn-outline-success my-2 my-sm-0" type="submit">Найти</button>
         </form>
     </div>
 </nav>
