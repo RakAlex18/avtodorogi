@@ -9,11 +9,11 @@
 
     <form action="" method="post" class="container form-horizontal" role="form">
         <?php
-        /*если существует GET запрос с ID*/
-        if (isset($_GET['id'])) {
+        /*если существует GET запрос с id_authors*/
+        if (isset($_GET['id_authors'])) {
         //создаем переменную для присваивания ей номера ID из GET запроса
-        $authorID = $_GET['id'];
-        $select_author = "SELECT id, name_author,link_author FROM author WHERE id=$authorID";
+        $authorID = $_GET['id_authors'];
+        $select_author = "SELECT id_authors, name_author,link_author FROM author WHERE id_authors=$authorID";
         //передаем 2 параметра: подключение из db.php и $select_author
         $res_select = mysqli_query($con, $select_author);
         //проверка на наличие ошибок
@@ -45,13 +45,13 @@
                 while ($author = mysqli_fetch_assoc($res_select)) {
                 ?>
                 <tr>
-                    <td><?= $author['id'] ?></td>
+                    <td><?= $author['id_authors'] ?></td>
                     <td><?= $author['name_author'] ?></td>
                     <td><?= $author['link_author'] ?></td>
                     <td>
                         <input name="deleteAuthor" type="submit" value="Удалить"
                                onclick="return confirm('Действительно удалить этого автора?');"
-                               formaction="delete_report.php?id=<?= $author['id'] ?>"
+                               formaction="delete_report.php?id_authors=<?= $author['id_authors'] ?>"
                                class="btn btn-warning btn-block">
                     </td>
                 </tr>

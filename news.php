@@ -43,7 +43,7 @@
         /*через * вытаскиваем все данные из моей таблицы news со следующей
          сортировкой: все id, кроме текущего $newsID,
          по убыванию ORDER BY id DESC с лимитом в 9 строк*/
-        $sql2 = "SELECT id, title, CONCAT(LEFT (content, 500), '...') as content, id_author, pub_date, link_content FROM news WHERE id>0 AND id!=$newsID ORDER BY id DESC LIMIT 9";
+        $sql2 = "SELECT id, title, CONCAT(LEFT (content, 500), '...') as content, id_author, pub_date, link_content, name_author FROM news LEFT JOIN author ON news.id_author = author.id_authors WHERE id>0 AND id!=$newsID ORDER BY id DESC LIMIT 9";
         //передаем 2 параметра: подключение из db.php и $sql2
         $result2 = mysqli_query($con, $sql2);
         //проверка на наличие ошибок
@@ -60,7 +60,7 @@
                     </a>
                     <p class="card-text"><?= $last_news['content'] ?></p>
                     <div class="card-link">Источник:
-                        <a href="<?= $last_news['link_content'] ?>" target="_blank"><?= $last_news['id_author'] ?></a>
+                        <a href="<?= $last_news['link_content'] ?>" target="_blank"><?= $last_news['name_author'] ?></a>
                     </div>
                     <span><?= $last_news['pub_date'] ?></span>
                 </div>

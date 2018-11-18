@@ -89,11 +89,11 @@ function updateNews()
 function updateAuthors()
 {
     global $con;//делаем глобальной переменную соединения с БД
-    $id = $_GET['id']; //получаем id из URL
+    $id = $_GET['id_authors']; //получаем id из URL
     if (isset($_POST['updateAuthor'])) {
         $name_author = $_POST['name_author']; /*записываем в переменную данные из инпута*/
         $link_author = $_POST['link_author']; /*записываем в переменную данные из инпута*/
-        $updateAuthor = "UPDATE author SET name_author='$name_author',link_author='$link_author' WHERE id = $id";
+        $updateAuthor = "UPDATE author SET name_author='$name_author',link_author='$link_author' WHERE id_authors = $id";
         $res_update = mysqli_query($con, $updateAuthor);
         if (!$res_update) {
             die('Query FAILED' . mysqli_error());
@@ -160,11 +160,11 @@ function deleteNews()
 //функция УДАЛЕНИЕ АВТОРА
 function deleteAuthor()
 {
-    $id = $_GET['id'];
+    $id_authors = $_GET['id_authors'];
     //echo $id;
     if (isset($_POST['deleteAuthor'])) {
         global $con;//делаем глобальной переменную соединения с БД
-        $delete_author = "DELETE FROM author WHERE id = $id";
+        $delete_author = "DELETE FROM author WHERE id_authors = $id_authors";
         $res = mysqli_query($con, $delete_author);
 
         if (!$res) {

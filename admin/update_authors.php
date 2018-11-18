@@ -8,7 +8,7 @@
 
 <form action="" method="post" class="container form-horizontal" role="form">
     <?php
-    $select_author = "SELECT id, name_author, link_author FROM author WHERE id>0 ORDER BY id DESC LIMIT 15";
+    $select_author = "SELECT id_authors, name_author, link_author FROM author WHERE id_authors>0 ORDER BY id_authors DESC LIMIT 15";
     //передаем 2 параметра: подключение из db.php и $select_author
     $res_select = mysqli_query($con, $select_author);
     //проверка на наличие ошибок
@@ -44,14 +44,14 @@
             while ($author = mysqli_fetch_assoc($res_select)) {
             ?>
             <tr>
-                <td><?= $author['id'] ?></td>
+                <td><?= $author['id_authors'] ?></td>
                 <td><?= $author['name_author'] ?></td>
                 <td><?= $author['link_author'] ?></td>
 
                 <td>
-                    <input name="update_authors" type="submit" formaction="updateAuthors.php?id=<?= $author['id'] ?>" value="Редактировать"
+                    <input name="update_authors" type="submit" formaction="updateAuthors.php?id_authors=<?= $author['id_authors'] ?>" value="Редактировать"
                            class="btn btn-success btn-block">
-                    <input type="submit" formaction="deleteAuthors.php?id=<?= $author['id'] ?>" value="Удалить"
+                    <input type="submit" formaction="deleteAuthors.php?id_authors=<?= $author['id_authors'] ?>" value="Удалить"
                            class="btn btn-warning btn-block">
                 </td>
             </tr>
