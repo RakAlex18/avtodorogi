@@ -1,6 +1,13 @@
 <?php session_start(); ?>
 
-<?php require_once "db.php";?>
+<?php require_once "classes/Database.php";?>
+<?php
+$db = new Database('localhost', 'root', '', 'avtodorogi');
+$news = $db->selectAll('SELECT * FROM users');
+/*echo "<pre>";
+print_r($news);
+echo "<pre>";*/
+?>
 
 <?php include "includes/header.php"; ?>
 <?php include "includes/nav_top.php"; ?>

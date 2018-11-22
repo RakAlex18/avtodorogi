@@ -80,7 +80,7 @@
             </div>
             </div>
         <div class="form-row">
-            <div class="form-group col-sm-12 col-md-4">
+            <div class="form-group col-sm-12 col-md-">
                 <div class="col-sm-9 input-group">
 				<div class="input-group-prepend">
                         <div class="input-group-text">
@@ -103,36 +103,13 @@
                     <input type="phoneNumber" name="phoneNumber" id="phoneNumber" placeholder="Номер телефона - Viber" class="form-control">
                 </div>
             </div>
-            <fieldset class="form-group">
-                <div class="row">
-                    <legend class="col-form-label col-sm-3 pt-0">Ваш пол</legend>
-                    <div class="col-sm-9">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                            <label class="form-check-label" for="gridRadios1">
-                                <i class="fas fa-male"></i>
-                                муж
-                            </label>
-                        </div>
-                        <div class="form-check">
 
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                            <label class="form-check-label" for="gridRadios2">
-
-                                <i class="fas fa-female"></i>
-                                жен
-                            </label>
-                        </div>
-
-                    </div>
-                </div>
-            </fieldset>
 
           </div> <!-- /.form-group -->
 <div class = "row justify-content-center">
             <div class = "col-auto">
                 <button type="submit" name = "registr" class="btn btn-primary btn-block mb-3">Зарегистрироваться</button>
-             
+
 			 </div>
 			 </div>
 
