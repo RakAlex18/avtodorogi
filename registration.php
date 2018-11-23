@@ -1,31 +1,37 @@
 <?php session_start(); ?>
 <?php require_once "classes/User.php"; ?>
 <?php require_once "classes/Registration.php";?>
-
+<?php require_once "classes/Password.php";?>
 <?php require_once "classes/Database.php"; ?>
 <?php include "includes/header.php"; ?>
 <?php include "includes/nav_top.php"; ?>
 
 
-/*НЕ РАБОТАЕТ!!!!!!!!!*/
-
 <?php
 $db = new Database('localhost', 'root', '', 'avtodorogi');
 $form = new Registration($_POST);
-
+/*Делаем переменные доступными для чтения*/
+$firstName = $db->escape($form->getFirstName());
+$lastName = $db->escape( $form->getLastName());
+$login =  $db->escape($form->getLogin());
+$email = $db->escape($form->getEmail());
+$birthDate = $db->escape($form->getBirthDate());
+$password = new Password($db->escape($form->getPassword()));
+$phoneNumber = $db->escape($form->getPhoneNumber());
+//$user_role =  $form->getUserRole();
 if ($_POST) {
     if ($form->validate()) {
-        var_dump($_POST);
-     //   echo $form=login;
-        $res=$db->selectAll("SELECT * FROM users WHERE id = '1'");
-var_dump($res);
-die();
+       // var_dump($_POST);
+   //   echo $login; выводит логин
+        $res=$db->selectAll("SELECT * FROM users WHERE login = '$login'");
+//var_dump($res);//строку с логином находит
+//die();
         if ($res){
-            echo $msg = "Такой пользователь существует";
+           echo  $msg = "Пользователь с таким логином уже существует";
         } else{
-            $db->selectAll("INSERT INTO users (login, email, password) VALUES ('{$login}','{$email}', '{$password}')");
-            echo "Регистр успех11111!!!";
-            //header("Location: index.php?msg=Регистрация успешна");
+            $db->selectAll("INSERT INTO users (firstName, lastName, login, email, birthDate, password, phoneNumber) VALUES ('{$firstName}','{$lastName}' ,'{$login}','{$email}','{$birthDate}' , '{$password}', '{$phoneNumber} ')");
+           // echo "Регистрация прошла  успешно!";
+            header("Location: index.php?msg=Регистрация успешна");
         }
     } else {
         echo $form->passwordMatch() ? 'Не все поля заполнены' : 'Пароли не совпадают';

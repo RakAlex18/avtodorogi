@@ -24,9 +24,6 @@ class Database {
         return $data;
     }
 
-    public function insertUser($sql){
-        $this->connection->query($sql);
 
-    }
 }
 ?>

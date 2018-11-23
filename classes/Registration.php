@@ -25,7 +25,7 @@ class Registration extends User
 
     public function validate()
     {
-        return !empty($this->firstName) && !empty($this->email) && !empty($this->password) && !empty($this->confirm_password) && $this->passwordMatch();
+        return !empty($this->firstName) && !empty($this->lastName) && !empty($this->login) && !empty($this->email) && !empty($this->password) && !empty($this->confirm_password) && $this->passwordMatch();
     }
 
 }
